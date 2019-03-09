@@ -1,0 +1,40 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    .header__list
+        margin: 50px 100px
+
+.logo
+    a
+        font-size: 40px
+        font-weight: 900
+        color: $black
+        transition: $transition
+        &:hover
+            color: red
+.navigations
+    ul
+        display: flex
+        li
+            margin-left: 70px
+            a
+                color: $black
+                font-size: 22px
+                transition: $transition
+            .btn__site
+                color: $white
+                padding: 5px 20px
+                &:hover
+                    color: $black
+
+.btn__site
+    display: block
+    background: $black
+    color: $white
+    border-radius: 20px
+    transition: $transition
+    &:hover
+        background: $white
+        color: $black            

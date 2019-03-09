@@ -2,4 +2,214 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot");
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular/MontserratRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/MontserratBold/MontserratBold.eot");
+  src: url("../fonts/MontserratBold/MontserratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratBold/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold/MontserratBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/MontserratBlack/MontserratBlack.eot");
+  src: url("../fonts/MontserratBlack/MontserratBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratBlack/MontserratBlack.woff") format("woff"), url("../fonts/MontserratBlack/MontserratBlack.ttf") format("truetype");
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header .header__list {
+  margin: 50px 100px;
+}
+
+.logo a {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000000;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.logo a:hover {
+  color: red;
+}
+
+.navigations ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigations ul li {
+  margin-left: 70px;
+}
+
+.navigations ul li a {
+  color: #000000;
+  font-size: 22px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.navigations ul li .btn__site {
+  color: #ffffff;
+  padding: 5px 20px;
+}
+
+.navigations ul li .btn__site:hover {
+  color: #000000;
+}
+
+.btn__site {
+  display: block;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn__site:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.left__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 105px;
+  height: 100%;
+  background: #ffffff;
+}
+
+.left__bar .icons {
+  margin-bottom: 40px;
+}
+
+.left__bar .text {
+  width: 460px;
+  margin-top: 340px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.left__bar .text p {
+  font-size: 22px;
+  color: #BFBFBF;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.left__bar .text p span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.left__bar_list {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content__btn {
+  display: block;
+  width: 300px;
+  height: 60px;
+  border-radius: 35px;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 0px 40px 90px #000000;
+          box-shadow: 0px 40px 90px #000000;
+}
+
+.content__btn .btn__site {
+  line-height: 62px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
